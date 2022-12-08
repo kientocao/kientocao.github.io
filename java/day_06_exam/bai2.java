@@ -1,6 +1,6 @@
 public class bai2 {
     public static void main(String[] args) {
-        countword("Vũ Monh Kion");
+        countword("Vũ Monh Kion  ");
     }
     public static void countword(String str){
         int i = 0;
@@ -10,7 +10,7 @@ public class bai2 {
                 i += 0;
             }else{
                 if (str.charAt(j) == ' '){
-                    if ((str.charAt(j+1) == '\n') || (str.charAt(j+1) == ' ')){
+                    if (str.charAt(j+1) == ' '){
                         i+= 0;
                     }else{
                         i++;
