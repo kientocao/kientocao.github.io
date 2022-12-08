@@ -1,11 +1,12 @@
 public class bai1 {
     public static void main(String[] args) {
-        printRectangle(4,4);
+        printSquare(4);
+        System.out.println();
         printdelta(4);
     }
-    public static void printRectangle(int row, int col) {
-        for (int i=0;i< row;i++){
-            for (int j=0;j< col;j++) {
+    public static void printSquare(int a) {
+        for (int i=0;i< a;i++){
+            for (int j=0;j< a;j++) {
                 System.out.print("* ");
             }
             System.out.println();
