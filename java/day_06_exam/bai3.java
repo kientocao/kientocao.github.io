@@ -2,9 +2,10 @@ import java.util.Random;
 
 public class bai3 {
     public static void main(String[] args) {
-        int number = 0;
         Random rd = new Random();
-
+        int number = rd.nextInt();
+        System.out.println("Số ngẫu nhiên là: " + number);
+        System.out.println("Số đó là số nguyên tố: "+isPrimeNumber(number));;
     }
     public static boolean isPrimeNumber(int n) {
         if (n < 2) {
