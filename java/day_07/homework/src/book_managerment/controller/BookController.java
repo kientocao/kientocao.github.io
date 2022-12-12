@@ -2,6 +2,7 @@ package book_managerment.controller;
 
 import book_managerment.service.BookService;
 
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class BookController {
@@ -31,7 +32,10 @@ public class BookController {
                     break;
                 }
                 case 3: {
-                    bookService.list();
+                    System.out.println("Các sách xuất bản trong năm nay là: ");
+                    Calendar instance = Calendar.getInstance();
+                    int year = instance.get(Calendar.YEAR);
+                    bookService.publishBooks(year);
                     break;
                 }
                 case 4: {
