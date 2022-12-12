@@ -25,6 +25,16 @@ public class BookController {
                     break;
                 }
                 case 2: {
+                    System.out.print("Nhập tiêu đề cần tìm : ");
+                    String category = sc.nextLine();
+                    bookService.findByCategory(category);
+                    break;
+                }
+                case 3: {
+                    bookService.list();
+                    break;
+                }
+                case 4: {
                     isQuit = true;
                     break;
                 }
@@ -38,6 +48,8 @@ public class BookController {
     public static void showMenu() {
         System.out.println("\n********* MENU *********");
         System.out.println("1 - Tìm kiếm theo tên");
-        System.out.println("2 - Thoát");
+        System.out.println("2 - Tìm kiếm theo thể loại");
+        System.out.println("3 - Liệt kê các sách xuất bản trong năm 2022");
+        System.out.println("4 - Thoát");
     }
 }
