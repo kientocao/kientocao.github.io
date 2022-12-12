@@ -33,7 +33,7 @@ public class BookService {
         }
     }
 
-    public void publishBooks(int year) {
+    public void publishYears(int year) {
 
         for (Book book : bookRepository.findAll()) {
             if (book.year == year) {

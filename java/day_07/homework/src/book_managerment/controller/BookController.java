@@ -35,7 +35,7 @@ public class BookController {
                     System.out.println("Các sách xuất bản trong năm nay là: ");
                     Calendar instance = Calendar.getInstance();
                     int year = instance.get(Calendar.YEAR);
-                    bookService.publishBooks(year);
+                    bookService.publishYears(year);
                     break;
                 }
                 case 4: {
