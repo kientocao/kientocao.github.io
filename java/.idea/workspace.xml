@@ -2,14 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb26b87d-08e7-4120-9b31-77a4d603eadf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day_03/src/ifPratice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/homework/src/model/Film.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/homework/src/model/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/homework/src/model/Serial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/Inheritance_demo/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/Inheritance_demo/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/Inheritance_demo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/encapsolution_demo/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/encapsolution_demo/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/encapsolution_pactice/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/encapsolution_pactice/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/inheritance_practice/Deverloper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/inheritance_practice/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/inheritance_practice/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/inheritance_practice/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/student_management/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_08/lesson8/src/student_management/service/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day_07/lesson7/src/bookManagement/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day_07/lesson7/src/bookManagement/controller/BookController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -28,7 +50,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MyPC/Documents/GitHub/kientocao.github.io/java/day_03"
+    "last_opened_file_path": "C:/Users/MyPC/Documents/GitHub/kientocao.github.io/java/day_08/homework",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -41,6 +64,8 @@
       <updated>1669389304092</updated>
       <workItem from="1669389305372" duration="36000" />
       <workItem from="1669724928764" duration="737000" />
+      <workItem from="1671020975886" duration="2766000" />
+      <workItem from="1671024959780" duration="984000" />
     </task>
     <servers />
   </component>
