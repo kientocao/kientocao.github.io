@@ -52,11 +52,12 @@ import static model.BookGson.getListObjectFromJsonFile;
                         break;
                     case 4:
                         System.out.println("Sắp xếp sách theo số trang");
+                        bookRepository.sortByPageNumber();
                         break;
                     case 5:
-                        System.out.println("Sắp xếp sách theo thể loại");
+                        System.out.println("Sắp xếp sách theo năm");
+                        bookRepository.sortByYear();
                         break;
-
                     case 6:
                         isQuit = true;
                         break;
