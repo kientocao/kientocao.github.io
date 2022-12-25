@@ -1,7 +1,6 @@
 package account_management.frontend.ui;
 
 import account_management.backend.controller.AccountCotroller;
-import account_management.backend.controller.ProgramController;
 import account_management.backend.model.Account;
 
 import java.util.List;
@@ -9,7 +8,7 @@ import java.util.Scanner;
 
 public class AccountUI {
     AccountCotroller accountController = new AccountCotroller();
-    public void run() {
+    public void run(Account account) {
         Scanner scanner = new Scanner(System.in);
         int option = 0;
         boolean isQuit = false;
@@ -24,21 +23,15 @@ public class AccountUI {
             }
             switch (option) {
                 case 1: {
-                    System.out.println("Nhập username cần chỉnh sửa : ");
-                    String username =scanner.nextLine();
-                    List<Account> accounts = accountController.changeUsername(username);
+                    accountController.changeUsername(account);
                     break;
                 }
                 case 2: {
-                    System.out.println("Nhập email cần chỉnh sửa : ");
-                    String email =scanner.nextLine();
-                    List<Account> accounts = accountController.changeUsername(email);
+                    accountController.changeEmail(account);
                     break;
                 }
                 case 3: {
-                    System.out.println("Nhập mật khẩu cần chỉnh sửa : ");
-                    String password =scanner.nextLine();
-                    List<Account> accounts = accountController.changeUsername(password);
+                    accountController.changePassword(account);
                     break;
                 }
                 case 4: {

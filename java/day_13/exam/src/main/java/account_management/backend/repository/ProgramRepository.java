@@ -21,7 +21,7 @@ public class ProgramRepository {
         for (Account account : accounts) {
             if (email.equals(account.getEmail()) && password.equals(account.getPassword())) {
                 System.out.println("Chào mừng " + account.getUsername() + "! Bạn có thể thực hiện các công việc sau:");
-                accountUI.run();
+                accountUI.run(account);
                 isExists = true;
             }
         }
