@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ProgramController {
-    private ProgramService programService = new ProgramService();
+    private final ProgramService programService = new ProgramService();
 
     public void login(List<Account> accounts, Scanner scanner) {
         programService.login(accounts,scanner);

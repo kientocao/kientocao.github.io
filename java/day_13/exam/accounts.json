@@ -2,7 +2,7 @@
   {
     "username": "kiencaoto",
     "email": "a123kien@gmail.com",
-    "password": "12345679"
+    "password": "12345678"
   },
   {
     "username": "a124kien",
@@ -18,5 +18,15 @@
     "username": "a124kien",
     "email": "a126kien@gmail.com",
     "password": "12345678"
+  },
+  {
+    "username": "kienvu",
+    "email": "a127kien@gmail.com",
+    "password": "12345678"
+  },
+  {
+    "username": "a129kien",
+    "email": "a129kien@gmail.com",
+    "password": "kientocao"
   }
 ]

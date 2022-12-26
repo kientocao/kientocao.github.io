@@ -3,7 +3,6 @@ package account_management.backend.controller;
 import account_management.backend.model.Account;
 import account_management.backend.service.AccountService;
 
-import java.util.List;
 
 public class AccountCotroller {
     public AccountService accountService = new AccountService();

@@ -1,5 +1,6 @@
 package account_management.backend.repository;
 
+import account_management.backend.database.AccountDB;
 import account_management.backend.model.Account;
 import account_management.backend.utils.FileUtils;
 import account_management.frontend.ui.AccountUI;
@@ -68,7 +69,7 @@ public class ProgramRepository {
         }
     }
 
-    public void forgotPassword(List<Account> accounts, Scanner scanner) {
+    public void forgotPassword(List<Account> accounts, Scanner scanner)  {
             System.out.print("Nhập email cần lấy lại mật khẩu: ");
             String email = scanner.nextLine();
             boolean isExist = false;
@@ -80,10 +81,14 @@ public class ProgramRepository {
             if (isExist) {
                 for (Account a : accounts) {
                     if (a.getEmail().equals(email)) {
-                        System.out.println("Nhập mật khẩu mới: ");
-                        String newPassword = scanner.nextLine();
+                        String newPassword;
+                        do {
+                            System.out.println("Nhập mật khẩu mới: ");
+                            newPassword = scanner.nextLine();
+                        }
+                        while (!validatePassword(newPassword));
                         a.setPassword(newPassword);
-                        System.out.println("Mật khẩu của bạn đã được thay đổi thành công");
+                        FileUtils.setDataToFile("accounts.json", AccountDB.accounts);
                     }
                 }
             } else {
@@ -101,12 +106,14 @@ public class ProgramRepository {
                 throw new Exception("Email không đúng định dạng");
             }
         }
-        private static boolean validatePassword(String password) throws Exception {
+        private static boolean validatePassword(String password) {
             if (password.length() < 7 || password.length() > 15) {
-                throw new Exception("Mật khẩu phải có độ dài từ 7 đến 15 ký tự");
+                System.out.println("Mật khẩu phải có độ dài từ 7 đến 15 ký tự");
             } else {
+                System.out.println("Mật khẩu của bạn đã được thay đổi thành công");
                 return true;
             }
+            return false;
         }
     }
 
