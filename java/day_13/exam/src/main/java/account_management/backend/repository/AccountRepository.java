@@ -35,4 +35,7 @@ public class AccountRepository {
     public void logout() {
         programUI.run();
     }
+    public boolean quit(){
+        return true;
+    }
 }

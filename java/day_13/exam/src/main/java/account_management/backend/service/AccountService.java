@@ -18,4 +18,5 @@ private final AccountRepository accountRepository = new AccountRepository();
     public void logout() {
         accountRepository.logout();
     }
+
 }

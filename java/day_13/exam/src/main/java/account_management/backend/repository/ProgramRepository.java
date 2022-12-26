@@ -13,6 +13,7 @@ import java.util.regex.Pattern;
 
 public class ProgramRepository {
     AccountUI accountUI = new AccountUI();
+    AccountRepository accountRepository = new AccountRepository();
     public void login(List<Account> accounts, Scanner scanner) {
         boolean isExists = false;
         System.out.println("Nhập email: ");
@@ -45,7 +46,6 @@ public class ProgramRepository {
                 isExists = true;
             }
         }
-
         if (isExists) {
             System.out.println("Email đã tồn tại!");
         } else {

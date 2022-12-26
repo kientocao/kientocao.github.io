@@ -1,9 +1,8 @@
 package account_management.frontend.ui;
 
 import account_management.backend.controller.ProgramController;
-import account_management.backend.model.Account;
+import account_management.backend.repository.ProgramRepository;
 
-import java.util.List;
 import java.util.Scanner;
 
 import static account_management.backend.database.AccountDB.accounts;
@@ -11,6 +10,7 @@ import static account_management.backend.database.AccountDB.accounts;
 public class ProgramUI {
     public void run() {
         ProgramController programController = new ProgramController();
+        ProgramRepository programRepository = new ProgramRepository();
         Scanner scanner = new Scanner(System.in);
         int option = 0;
         boolean isQuit = false;
@@ -26,7 +26,6 @@ public class ProgramUI {
             switch (option) {
                 case 1: {
                     programController.login(accounts, scanner);
-                    isQuit = true;
                     break;
                 }
                 case 2: {
