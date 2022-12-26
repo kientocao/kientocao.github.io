@@ -15,7 +15,7 @@ public class AccountUI {
         while (!isQuit) {
             showMenu();
             try {
-                System.out.println("Nhập lựa chọn");
+                System.out.println("Nhập lựa chọn: ");
                 option = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
                 System.out.println("Lựa chọn không hợp lệ");

@@ -26,6 +26,7 @@ public class ProgramUI {
             switch (option) {
                 case 1: {
                     programController.login(accounts, scanner);
+                    isQuit = true;
                     break;
                 }
                 case 2: {
@@ -35,10 +36,6 @@ public class ProgramUI {
                 case 3: {
 
                     programController.forgotPassword(accounts, scanner);
-                    break;
-                }
-                case 4: {
-                    isQuit = true;
                     break;
                 }
                 default: {
@@ -53,6 +50,5 @@ public class ProgramUI {
         System.out.println("1- Đăng nhập");
         System.out.println("2- Đăng kí ");
         System.out.println("3- Quên mật khẩu ");
-        System.out.println("4 - Thoát\n");
     }
 }
